@@ -13,7 +13,7 @@ const getExpenseById = async (req, res) => {
 };
 
 const getExpenseByFilter = async (req, res) => {
-  const expenseId = Number(req.params.expenseId);
+  const expenseId = Number(req.query.expenseId);
   const userId = Number(req.query.userId);
   const categoryName = req.query.categories;
   const dateFrom = req.query.from;
